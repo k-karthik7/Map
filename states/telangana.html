@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telangana State Portal</title>
+    <link rel="stylesheet" href="jajaj.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="logo"></a>
+            </div>
+            <div class="tel"> <h3>Telangana State Portal</h3></div>
+            <div class="navbar">
+                <div class="close-nav"><button>x</button></div>
+                <nav>
+                    <ul>
+                        <li><a href="../test.html">Home</a></li>
+                        <li><a href="#">Digital Payment</a></li>
+                        <li><a href="../dist/index.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="alldrops"><div class="container">
+        <label class="dropdown">
+
+            <div class="dd-button">
+              Citizen
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              
+              <li>
+                <a href="https://ts.meeseva.telangana.gov.in">Mee Seva</a>
+              </li>
+            </ul>
+            
+          </label>
+    </div>
+    <div class="container">
+        <label class="dropdown">
+
+            <div class="dd-button">
+              Bussiness
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              
+              <li class="divider"></li>
+              <li>
+                <a href="http://ahddf.telangana.gov.in">Animal Husbandry and Fisheries	</a>
+              </li>
+            </ul>
+            
+          </label>
+    </div>
+    <div class="container">
+        <label class="dropdown">
+
+            <div class="dd-button">
+              Employees
+            </div>
+          
+            <input type="checkbox" class="dd-input" id="test">
+          
+            <ul class="dd-menu">
+              
+              <li class="divider"></li>
+              <li>
+                <a href="#">Telangana employees</a>
+              </li>
+            </ul>
+            
+          </label>
+    </div></div>
+    
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+</body>
+</html>
